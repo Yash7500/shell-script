@@ -1,0 +1,19 @@
+no=12
+i=2
+f=0
+while [ $i -le `expr $no / 2` ]
+do
+   if [ `expr $no % $i` -eq 0 ]
+   then
+      f=1
+fi
+
+    i=`expr $i + 1`
+done
+
+if [ $f -eq 1 ]
+then
+    echo "not prime"
+else
+   echo "prime"
+fi

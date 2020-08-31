@@ -1,0 +1,6 @@
+r=6
+echo " the radious of the circle is $r"
+a=$(echo "3.17*$r*$r" | bc )
+p=$(echo "3.17*2*$r" | bc )
+echo "area of the circle is  " $a
+echo "perimeter of the circle is" $p

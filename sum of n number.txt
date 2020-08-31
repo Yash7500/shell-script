@@ -1,0 +1,16 @@
+read n 
+sum=0
+i=1
+echo "the value of n is::"$n
+while [ $i -le $n ]
+do
+    sum=`expr $sum + $i`
+    i=`expr $i + 1`
+
+done
+    echo "sum::"$sum
+	
+	
+	
+	
+	

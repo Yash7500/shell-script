@@ -1,0 +1,21 @@
+read n 
+s=1
+i=1
+c=1
+echo "the no are 1 to "$n""
+while [ $i -le $n ]
+do
+    s=`expr $i * $i`
+    c=`expr $i * $i * $i`
+    cr=`expr $i / 3`
+    echo "square of "$i "is::" $s
+    echo "cube of "$i "is::" $c
+    echo "cube root of "$i "is" $cr
+    i=`expr $i + 1`
+    
+
+done
+   
+	
+	
+	######cube square 

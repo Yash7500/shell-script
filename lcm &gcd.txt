@@ -1,0 +1,27 @@
+echo "Enter the first number :20"
+a=20
+echo "Enter the second number :30 "
+b=30
+
+if [ $a -gt $b ]
+then
+num=$a
+num2=$b
+else
+num=$b
+num2=$a
+fi
+r=`expr $num % $num2`
+
+while [ $r -ne 0 ]
+do
+num=$num2
+num2=$r
+r=`expr $num % $num2`
+done
+
+gcd=$num2
+lcm=`expr $a * $b / $gcd`
+
+echo " The LCM of $a and $b is : $lcm"
+echo " The GCD of $a and $b is : $gcd"

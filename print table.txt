@@ -1,0 +1,30 @@
+read n 
+t=0
+echo "the value of n is::"$n
+echo "table of" $n "is::"
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+    t=`expr $n * $i`
+    echo $t
+
+done
+    
+	
+	#####table
+	
+	
+	
+	
+	read n 
+t=0
+i=1
+echo "the value of n is::"$n
+echo "table of" $n "is::"
+while [ $i -le 10 ] 
+do
+    t=`expr $n * $i`
+    echo $t
+    i=`expr $i + 1`
+
+done
+    

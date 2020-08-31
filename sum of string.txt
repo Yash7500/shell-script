@@ -1,0 +1,9 @@
+no=121
+sum=0
+while [ $no -gt 0 ]
+do
+  rim=`expr $no % 10`
+  sum=`expr $rim + $sum`
+  no=`expr $no / 10`
+done
+    echo "sum of no:$sum"
